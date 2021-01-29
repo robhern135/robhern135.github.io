@@ -1,68 +1,184 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Rob Hern - Interactive Resume</title>
-  <!--This project has been modified from the 'Responsive Resume' project as part of the Udacity Nanodegree program. All code written by them belong to them as necessary -->
-  <link href="css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
-</head>
 
-<body>
-  <div id="main">
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-    </div>
-    <div style="clear: both;"></div>
-    <div id="projects" class= "secondary">
-      <h2>Projects</h2>
-    </div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="education" class="secondary">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv" class="gray">
-      <h2>Where I've Studied and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="orange center-text">Let's Connect</h2>
-      <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
-  </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel ="stylesheet" href="css/style.css">
+    <!--font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
 
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
-  <script src="js/resumeBuilder.js"></script>
 
-  <script>
-    if (document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if (document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if (document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if (document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if (document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if (document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if (document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
-</body>
 
+    <title>Rob Hern - Developer in London - Javascript, React, Wordpress, PHP</title>
+  </head>
+  <body>
+
+
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mt-5">
+            <h1>Hi, I'm Rob</h1>
+            <h2 class="mb-3">I'm a Developer living and working in London</h2>
+            <div class="mb-5 social-container">
+              <a href="https://www.linkedin.com/in/robhern/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span>
+              </a>
+              <a href="https://twitter.com/RobHern" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i><span class="sr-only">twitter</span>
+              </a>
+              <a href="https://github.com/robhern135" target="_blank" class="social-link">
+                <i class="fab fa-github"></i><span class="sr-only">github</span>
+              </a>
+              <a href="https://codepen.io/robhern135" target="_blank" class="social-link">
+                <i class="fab fa-codepen"></i><span class="sr-only">codepen</span>
+              </a>
+            </div>
+            <h3 class="mb-3">I'm currently working remotely with a full time commitment at The Good Ideas Group.</h3>
+            <h3 class="mb-3">Please see a selection of my personal and professional work below.</h3>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section class="projects mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card-deck">
+
+              <div class="card">
+                <img class="card-img-top" src="./img/nasa.jpg" alt="NASA Natural Event Tracker">
+                <div class="card-body">
+                  <h5 class="card-title">NASA Natural Event Tracker</h5>
+                  <p class="card-text">React JS PWA using the NASA Natural Event API and google-map-react to display events around the globe.</p>
+                </div>
+                <div class="card-footer first">
+                  <small class="no-link">React</small>
+                  <small class="no-link">JSX</small>
+                 <a href="https://github.com/google-map-react/google-map-react" target="_blank"><small>google-map-react</small></a>
+                 <a href="https://eonet.sci.gsfc.nasa.gov/docs/v2.1" target="_blank"><small>NASA Natural Event API</small></a>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="https://github.com/robhern135/NASA-API-React-master" class="btn" target="_blank">View Repo</a>
+                  <a href="https://robhern135.github.io/NASA-API-React-master/" class="btn" target="_blank">View Live</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./img/compass.jpg" alt="Compass Pathways">
+                <div class="card-body">
+                  <h5 class="card-title">CompassPathways.org</h5>
+                  <small>Developed at The Good Ideas Group, 2020</small>
+                  <p class="card-text">Wordpress website for a mental health care company specialising in Treatment Resistant Depression.</p>
+                </div>
+                <div class="card-footer first">
+                  <small class="no-link">Wordpress</small>
+                  <small class="no-link">PHP</small>
+                  <small class="no-link">CSS/SASS</small>
+                  <small class="no-link">JS/jQuery</small>
+                 <a href="https://greensock.com/gsap/"  target="_blank"><small>GreenSock</small></a>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="http://compasspathways.com/" target="_blank" class="btn" target="_blank">View Live</a>
+                </div>
+              </div>
+              
+
+              <div class="card">
+                <img class="card-img-top" src="./img/pokedex.jpg" alt="ReactJS Pokedex">
+                <div class="card-body">
+                  <h5 class="card-title">ReactJS Pokédex</h5>
+                  <p class="card-text">React JS PWA using the Pokéapi to create a throwback to childhood, a Pokédex, with results filtered by region.</p>
+                </div>
+                <div class="card-footer first">
+                  <small class="no-link">React</small>
+                  <small class="no-link">JSX</small>
+                  <a href="https://pokeapi.co/" target="_blank"><small>Pokeapi</small></a>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="https://github.com/robhern135/pokedex-react" class="btn" target="_blank">View Repo</a>
+                  <a href="https://robhern135.github.io/pokedex-react/" class="btn" target="_blank">View Live</a>
+                </div>
+              </div>
+              
+
+              <div class="card">
+                <img class="card-img-top" src="./img/genetics.jpg" alt="Unilabs Genetics">
+                <div class="card-body">
+                  <h5 class="card-title">Unilabs Genetics</h5>
+                  <small>Developed at The Good Ideas Group, 2019</small>
+                  <p class="card-text">Drupal website for international genetics laboratories.</p>
+                </div>
+                <div class="card-footer first">
+                  <small class="no-link">Drupal</small>
+                  <small class="no-link">PHP/Twig</small>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="https://genetics.unilabs.com/" class="btn" target="_blank">View Live</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./img/github-jobs.jpg" alt="github jobs feed">
+                <div class="card-body">
+                  <h5 class="card-title">GitHub Jobs Feed</h5>
+                  <p class="card-text">ReactJS feed of job ads using the GitHub Jobs API and Bootstrap.</p>
+                </div>
+                <div class="card-footer first">
+                  <small class="no-link">ReactJS</small>
+                  <small class="no-link">JSX</small>
+                  <small class="no-link">Bootstrap</small>
+                  <a href="https://jobs.github.com/api"  target="_blank"><small>GitHub Jobs API</small></a>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="https://github.com/robhern135/github-jobs-react-master" class="btn" target="_blank">View Repo</a>
+                  <a href="https://robhern135.github.io/github-jobs-react-master/" class="btn" target="_blank">View Live</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card-img-top" src="./img/ntrkers-mockup.jpg" alt="NTRKers.org website">
+                <div class="card-body">
+                  <h5 class="card-title">NTRKers.org</h5>
+                  <small>Developed at The Good Ideas Group, 2020</small>
+                  <p class="card-text">Wordpress bespoke made site for a NTRK patient community.</p>
+                </div>
+                <div class="card-footer first">
+                  <small class="no-link">Wordpress</small>
+                  <small class="no-link">PHP</small>
+                  <small class="no-link">CSS/SASS</small>
+                  <small class="no-link">JS/jQuery</small>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="https://ntrkers.org/" class="btn" target="_blank">View Live</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>      
+  </body>
 </html>
