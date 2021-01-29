@@ -20,6 +20,16 @@ body {
   }
 }
 
+h4 a {
+  color: $black;
+  transition: 150ms ease color;
+  text-decoration: underline;
+  &:hover {
+    color: $green;
+    transition: 150ms ease color;
+  }
+}
+
 .social-container {
   display: flex;
   align-items: center;

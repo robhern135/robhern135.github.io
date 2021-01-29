@@ -28,6 +28,19 @@ body {
   }
 }
 
+h4 a {
+  color: #1d1d1d;
+  -webkit-transition: 150ms ease color;
+  transition: 150ms ease color;
+  text-decoration: underline;
+}
+
+h4 a:hover {
+  color: #5fc89c;
+  -webkit-transition: 150ms ease color;
+  transition: 150ms ease color;
+}
+
 .social-container {
   display: -webkit-box;
   display: -ms-flexbox;
