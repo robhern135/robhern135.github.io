@@ -28,6 +28,10 @@ body {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 h4 a {
   color: #1d1d1d;
   -webkit-transition: 150ms ease color;

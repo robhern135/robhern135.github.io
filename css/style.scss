@@ -20,6 +20,10 @@ body {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 h4 a {
   color: $black;
   transition: 150ms ease color;
