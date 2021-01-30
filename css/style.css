@@ -1,11 +1,12 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: 300;
 }
 
 body {
   color: #1d1d1d;
-  font-family: "Muli", "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
   -webkit-animation: fadein 1s;
           animation: fadein 1s;
 }
@@ -28,8 +29,16 @@ body {
   }
 }
 
-ul {
-  list-style: none;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+h1 span {
+  font-weight: bold;
+  color: #5fc89c;
 }
 
 h4 a {
@@ -37,12 +46,17 @@ h4 a {
   -webkit-transition: 150ms ease color;
   transition: 150ms ease color;
   text-decoration: underline;
+  font-weight: 500;
 }
 
 h4 a:hover {
   color: #5fc89c;
   -webkit-transition: 150ms ease color;
   transition: 150ms ease color;
+}
+
+ul {
+  list-style: none;
 }
 
 .social-container {
@@ -58,6 +72,7 @@ h4 a:hover {
 }
 
 .social-container a {
+  font-weight: bold;
   min-height: 82px;
   font-size: 3rem;
   color: #1d1d1d;
@@ -123,6 +138,11 @@ h4 a:hover {
 
 h5.card-title {
   margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+small {
+  font-weight: 300;
 }
 
 .card-footer.first small.no-link,

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 $green: #5fc89c;
@@ -7,10 +8,9 @@ $black: #1d1d1d;
 
 body {
   color: $black;
-  font-family: "Muli", "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
   animation: fadein 1s;
 }
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -20,25 +20,40 @@ body {
   }
 }
 
-ul {
-  list-style: none;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+h1 {
+  span {
+    font-weight: bold;
+    color: $green;
+  }
 }
 
 h4 a {
   color: $black;
   transition: 150ms ease color;
   text-decoration: underline;
+  font-weight: 500;
   &:hover {
     color: $green;
     transition: 150ms ease color;
   }
 }
 
+ul {
+  list-style: none;
+}
 .social-container {
   display: flex;
   align-items: center;
   justify-content: center;
   a {
+    font-weight: bold;
     min-height: 82px;
     font-size: 3rem;
     color: $black;
@@ -87,7 +102,12 @@ h4 a {
 }
 h5.card-title {
   margin-bottom: 0;
+  letter-spacing: 0.5px;
 }
+small {
+  font-weight: 300;
+}
+
 .card-footer.first {
   small.no-link,
   a {
