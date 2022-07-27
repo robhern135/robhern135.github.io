@@ -11,6 +11,11 @@ body {
   font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
   animation: fadein 1s;
 }
+
+img {
+  max-width: 100%;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -139,4 +144,8 @@ small {
   .card-deck {
     align-items: center;
   }
+}
+.qr-code {
+  max-width: 700px;
+  margin: 0 auto;
 }
