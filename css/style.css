@@ -33,13 +33,15 @@ h1 span {
   color: #5fc89c;
 }
 
-h4 a {
+h4 a,
+p a {
   color: #1d1d1d;
   transition: 150ms ease color;
   text-decoration: underline;
   font-weight: 500;
 }
-h4 a:hover {
+h4 a:hover,
+p a:hover {
   color: #5fc89c;
   transition: 150ms ease color;
 }
@@ -143,4 +145,4 @@ small {
 .qr-code {
   max-width: 700px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=style.css.map */
