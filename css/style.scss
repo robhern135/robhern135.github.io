@@ -39,7 +39,8 @@ h1 {
   }
 }
 
-h4 a {
+h4 a,
+p a {
   color: $black;
   transition: 150ms ease color;
   text-decoration: underline;
