@@ -5,12 +5,23 @@
 
 body {
   color: #1d1d1d;
-  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
-  animation: fadein 1s;
+  font-family: "Inter", "Segoe UI", Tahoma, Verdana, sans-serif;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  font-weight: 300;
 }
 
 img {
   max-width: 100%;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -22,15 +33,31 @@ img {
   }
 }
 h1,
-h2,
-h3,
-h4 {
-  font-weight: 300;
+h2 {
+  font-family: "Space Grotesk", Times, serif;
 }
 
+h1 {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 7vw 20px;
+  font-weight: 400;
+}
 h1 span {
-  font-weight: bold;
-  color: #5fc89c;
+  font-size: 4vw;
+}
+h1 span.highlight {
+  font-size: 16vw;
+  color: #0d3af6;
+}
+
+h2,
+h3 {
+  font-weight: 200;
 }
 
 h4 a,
@@ -42,7 +69,7 @@ p a {
 }
 h4 a:hover,
 p a:hover {
-  color: #5fc89c;
+  color: #0d3af6;
   transition: 150ms ease color;
 }
 
@@ -71,7 +98,7 @@ ul {
   transform-origin: bottom center;
 }
 .social-container a:hover i {
-  color: #5fc89c;
+  color: #0d3af6;
   transform-origin: bottom center;
   transform: translateY(-10px);
   transition: 150ms ease-in-out all;
@@ -92,7 +119,7 @@ ul {
 }
 
 .btn {
-  color: #5fc89c;
+  color: #0d3af6;
 }
 .btn:hover {
   color: #1d1d1d;
@@ -105,10 +132,18 @@ ul {
 h5.card-title {
   margin-bottom: 0;
   letter-spacing: 0.5px;
+  font-family: "Space Grotesk", Times, serif;
+  font-size: 24px;
 }
 
 small {
   font-weight: 300;
+}
+
+.card-footer a {
+  font-family: "Space Grotesk", Times, serif;
+  color: #0d3af6;
+  font-weight: 400;
 }
 
 .card-footer.first small.no-link,
@@ -129,7 +164,7 @@ small {
 }
 .card-footer.first a:hover {
   transition: 150ms linear all;
-  background-color: #5fc89c;
+  background-color: #0d3af6;
 }
 
 .card-footer.first {
@@ -145,4 +180,14 @@ small {
 .qr-code {
   max-width: 700px;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+}
+
+footer {
+  padding-bottom: 30px;
+}
+
+footer p {
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+/*# sourceMappingURL=style.css.map */

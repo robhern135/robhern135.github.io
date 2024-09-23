@@ -4,12 +4,15 @@
 }
 
 $green: #5fc89c;
+$blue: #0d3af6;
 $black: #1d1d1d;
-
+$inter: 'Inter', Arial, sans-serif;
+$space: 'Space Grotesk', Times, serif;
 body {
   color: $black;
-  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Verdana, sans-serif;
   animation: fadein 1s;
+  font-weight: 300;
 }
 
 img {
@@ -26,19 +29,32 @@ img {
 }
 
 h1,
-h2,
-h3,
-h4 {
-  font-weight: 300;
+h2 {
+  font-family: $space;
 }
 
 h1 {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 7vw 20px;
+  font-weight: 400;
   span {
-    font-weight: bold;
-    color: $green;
+    font-size: 4vw;
+
+    &.highlight {
+      font-size: 16vw;
+      color: $blue;
+    }
   }
 }
-
+h2,
+h3 {
+  font-weight: 200;
+}
 h4 a,
 p a {
   color: $black;
@@ -46,7 +62,7 @@ p a {
   text-decoration: underline;
   font-weight: 500;
   &:hover {
-    color: $green;
+    color: $blue;
     transition: 150ms ease color;
   }
 }
@@ -74,7 +90,7 @@ ul {
     }
     &:hover {
       i {
-        color: $green;
+        color: $blue;
         transform-origin: bottom center;
         transform: translateY(-10px);
         transition: 150ms ease-in-out all;
@@ -97,7 +113,7 @@ ul {
   }
 }
 .btn {
-  color: $green;
+  color: $blue;
   &:hover {
     color: $black;
   }
@@ -109,11 +125,19 @@ ul {
 h5.card-title {
   margin-bottom: 0;
   letter-spacing: 0.5px;
+  font-family: $space;
+  font-size: 24px;
 }
 small {
   font-weight: 300;
 }
-
+.card-footer {
+  a {
+    font-family: $space;
+    color: $blue;
+    font-weight: 400;
+  }
+}
 .card-footer.first {
   small.no-link,
   a {
@@ -132,7 +156,7 @@ small {
   transition: 150ms linear all;
   &:hover {
     transition: 150ms linear all;
-    background-color: $green;
+    background-color: $blue;
   }
 }
 
@@ -149,4 +173,11 @@ small {
 .qr-code {
   max-width: 700px;
   margin: 0 auto;
+}
+footer {
+  padding-bottom: 30px;
+}
+footer p {
+  font-size: 10px;
+  margin-bottom: 3px;
 }

@@ -55,11 +55,9 @@
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous"
       />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
-        rel="stylesheet"
-      />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
       <link
         rel="apple-touch-icon"
         sizes="76x76"
@@ -95,10 +93,10 @@
     </head>
     <body>
       <section class="intro">
-        <div class="container">
+
           <div class="row">
             <div class="col-md-12 text-center mt-5">
-              <h1>Hi, I'm <span>Rob</span></h1>
+              <h1><span>Need a website?</span><span class="highlight">Find Rob</span></h1>
               <h2 class="mb-3">I'm a Developer living and working in London</h2>
               <div class="mb-5 social-container">
                 <a
@@ -110,15 +108,6 @@
                   <i class="fab fa-linkedin"></i
                   ><span class="sr-only">LinkedIn</span>
                 </a>
-                <!-- <a
-                  href="https://twitter.com/RobHern"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="social-link"
-                >
-                  <i class="fab fa-twitter"></i
-                  ><span class="sr-only">twitter</span>
-                </a> -->
                 <a
                   href="https://github.com/robhern135"
                   target="_blank"
@@ -138,17 +127,13 @@
                   ><span class="sr-only">codepen</span>
                 </a>
               </div>
-              <h3 class="mb-3">
-                I'm currently working remotely with a full time commitment at
-                The Good Ideas Group.
-              </h3>
-              <h3 class="mb-3">
+              <!-- <h3 class="mb-3">
                 Please see a selection of my personal and professional work
                 below.
-              </h3>
+              </h3> -->
             </div>
           </div>
-        </div>
+
       </section>
 
       <section class="projects mt-5">
@@ -156,6 +141,50 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card-deck">
+                <div class="card">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./img/streaming-app.png"
+                    alt="React Native Streaming & Movie App"
+                  /> -->
+                  <video autoplay muted loop clas="card-img-top">
+                    <source src="./img/cf23.webm" type="video/webm" />
+                    <source src="./img/cf23.mp4" type="video/mp4" />
+                  </video>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Crossfit TwentyThree
+                    </h5>
+                    <p class="card-text">
+                     Bespoke WordPress website for a South London CrossFit Gym.
+                    </p>
+                  </div>
+                  <div class="card-footer first">
+                    <small class="no-link">Wordpress</small>
+                    <small class="no-link">PHP</small>
+                    <small class="no-link">CSS/SASS</small>
+                    <small class="no-link">JS/jQuery</small>
+                    <a
+                      href="https://greensock.com/gsap/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      ><small>GreenSock</small></a
+                    >
+                 
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                
+                    <a
+                      href="https://crossfittwentythree.com"
+                      class="btn"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >View Live</a
+                    >
+                  </div>
+                </div>
                 <div class="card">
                   <img
                     class="card-img-top"
@@ -200,7 +229,7 @@
                     >
                   </div>
                 </div>
-                <div class="card">
+                <!-- <div class="card">
                   <img
                     class="card-img-top"
                     src="./img/streaming-app.png"
@@ -249,7 +278,7 @@
                       >View Video</a
                     >
                   </div>
-                </div>
+                </div> -->
 
                 <div class="card">
                   <img
@@ -302,13 +331,47 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./img/compass.jpg"
+                    src="./img/norththames.jpg"
+                    alt="North Thames Genomics"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">North Thames Genomics Medicine Service</h5>
+                    <small
+                      >Developed at GIG Health, 2023-Current</small
+                    >
+                    <p class="card-text">
+               Wordpress website for NHS gene testing labs including a bespoke test tool library.
+                    </p>
+                  </div>
+                  <div class="card-footer first">
+	                <small class="no-link">Wordpress</small>
+                    <small class="no-link">PHP</small>
+                    <small class="no-link">CSS/SASS</small>
+                    <small class="no-link">JS/jQuery</small>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <a
+                      href="https://norththamesgenomics.nhs.uk/"
+                      class="btn"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >View Live</a
+                    >
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/compass-final.gif"
                     alt="Compass Pathways"
                   />
                   <div class="card-body">
                     <h5 class="card-title">CompassPathways.com</h5>
                     <small
-                      >Developed at The Good Ideas Group, 2020 - Current</small
+                      >Developed at GIG Health, 2020 - Current</small
                     >
                     <p class="card-text">
                       Wordpress website for a mental health care company
@@ -341,39 +404,7 @@
                     >
                   </div>
                 </div>
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="./img/genetics.jpg"
-                    alt="Unilabs Genetics"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Unilabs Corporate Suite</h5>
-                    <small
-                      >Developed at The Good Ideas Group, 2019-Current</small
-                    >
-                    <p class="card-text">
-                      Build and upkeep for over 15 Drupal websites for
-                      international laboratories.
-                    </p>
-                  </div>
-                  <div class="card-footer first">
-                    <small class="no-link">Drupal</small>
-                    <small class="no-link">PHP/Twig</small>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center"
-                  >
-                    <a
-                      href="https://unilabs.com/"
-                      class="btn"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      >View Live</a
-                    >
-                  </div>
-                </div>
-
+                
                 <div class="card">
                   <img
                     class="card-img-top"
@@ -383,7 +414,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Barts Life Sciences.org</h5>
                     <small
-                      >Developed at The Good Ideas Group, 2019 - Current</small
+                      >Developed at GIG Health, 2019 - Current</small
                     >
                     <p class="card-text">
                       Wordpress bespoke made site for a Life Sciences trust.
@@ -424,9 +455,12 @@
           <div class="row">
             <div class="col-md-12">
               <h4>Personal Work in Progress</h4>
-              <ul>
+              <ul style="padding-left:0px;">
                 <li>
                   Blue Plaque scanner using React Native and Google Vision.
+                </li>
+                 <li>
+                 Reading Hobbyist app using React Native, Firebase, and Google Books.
                 </li>
               </ul>
               <h4 class="text-center mb-5 mt-5">
@@ -445,6 +479,19 @@
             >from previewed.app</a
           >.
         </p>
+ <p>
+	  North Thames mockup base from
+         <a href="http://www.freepik.com">Designed by Cosmo-Studio / Freepik</a>.
+        </p>
+         <p>
+	 Compass Pathways mockup base from
+         <a href="http://www.freepik.com">Designed by rezaazmy / Freepik</a>.
+        </p>
+         <p>
+	 Crossfit TwentyThree mockup base from 
+   <a href="https://www.freepik.com/free-psd/isolated-tablet-laptop-smartphone-composition_91057319.htm#fromView=search&page=1&position=15&uuid=617a9f1d-0f7e-4d60-bd57-06247349539c">Vectonauta on Freepik</a>
+        </p>
+
       </footer>
 
       <!-- Optional JavaScript -->
